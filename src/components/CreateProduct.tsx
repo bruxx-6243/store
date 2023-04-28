@@ -49,7 +49,7 @@ export const CreateProduct = ({ onCreate }: CreateProductProps) => {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex items-center flex-col md:flex-row">
+      <div className="flex sm:items-center flex-col md:flex-row">
         <input
           onChange={handleChange}
           value={value}
