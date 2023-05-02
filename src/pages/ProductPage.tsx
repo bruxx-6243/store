@@ -47,9 +47,13 @@ export const ProductPage = () => {
             </p>
             <p className="mb-5">Count: {product?.rating.count}</p>
 
-            <button className="py-2 px-4 text-center bg-yellow-400 text-black">
+            <a
+              href="https://github.com/bruxx-6243/store"
+              target="_blank"
+              className="py-2 px-4 text-center bg-yellow-400 text-black"
+            >
               Place order
-            </button>
+            </a>
           </div>
         </div>
       </div>

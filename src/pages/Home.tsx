@@ -43,18 +43,20 @@ const Home = () => {
       <div className="container  mx-auto px-4 max-w-4xl grid gap-4 grid-cols-2 md:grid-cols-[repeat(auto-fill,minmax(200px,1fr))] mb-6">
         {displayProducts}
       </div>
-      <ReactPaginate
-        previousLabel={"prev"}
-        nextLabel={"next"}
-        pageCount={pageCount}
-        onPageChange={changePage}
-        containerClassName="flex items-center justify-center gap-4"
-        previousLinkClassName="border px-4 py-2 hover:bg-yellow-400"
-        nextLinkClassName="border px-4 py-2 hover:bg-yellow-400"
-        disabledClassName="border-red px-4 py-2"
-        activeClassName="border border-yellow-400 bg-yellow-400 py-2"
-        pageLinkClassName="border px-4 py-2 hover:bg-yellow-400"
-      />
+      <div className="mb-10">
+        <ReactPaginate
+          previousLabel={"prev"}
+          nextLabel={"next"}
+          pageCount={pageCount}
+          onPageChange={changePage}
+          containerClassName="flex items-center justify-center gap-4"
+          previousLinkClassName="border px-4 py-2 hover:bg-yellow-400"
+          nextLinkClassName="border px-4 py-2 hover:bg-yellow-400"
+          disabledClassName="border-red px-4 py-2"
+          activeClassName="border border-yellow-400 bg-yellow-400 py-2"
+          pageLinkClassName="border px-4 py-2 hover:bg-yellow-400"
+        />
+      </div>
 
       {modal && (
         <Modal onClose={() => closeModal()} title="Create New Product">

@@ -54,7 +54,7 @@ export const CreateProduct = ({ onCreate }: CreateProductProps) => {
           onChange={handleChange}
           value={value}
           type="text"
-          className="w-full border border-yellow-400 py-2 px-4 my-2 outline-none"
+          className="w-full border border-yellow-400 py-2 px-4 my-2 outline-none sm:rounded-none"
           placeholder="Enter product title ..."
         />
         <button
